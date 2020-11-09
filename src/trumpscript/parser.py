@@ -101,7 +101,7 @@ class Parser:
             # print(statement)
             fix_missing_locations(statement)
 
-        return Module(body=body_list)
+        return Module(body=body_list, type_ignores=[])
 
     # Obnoxious coverage
     def handle_anything(self, tokens):
